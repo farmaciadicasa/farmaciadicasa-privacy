@@ -4,36 +4,136 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <meta name="description" content="Pagina informativa ufficiale dell'app Farmacia di Casa.">
-  <title>Farmacia di Casa — Informazioni e privacy</title>
+  <meta name="description" content="Informativa privacy di Farmacia di Casa, app iOS per gestire prodotti, medicinali e date di scadenza.">
+  <meta name="theme-color" content="#116b60">
+  <title>Informativa privacy | Farmacia di Casa</title>
   <style>
-    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #193735; background: #f5f9f7; }
+    :root { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #163b37; background: #f5f9f7; color-scheme: light; }
     * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 28px 18px; }
-    main { width: min(100%, 680px); background: white; border: 1px solid #e2ebe7; border-radius: 24px; padding: clamp(25px, 6vw, 54px); box-shadow: 0 16px 46px rgba(19,65,53,.07); }
-    .brand { display: flex; gap: 12px; align-items: center; margin-bottom: 34px; font-weight: 750; letter-spacing: -.02em; }
-    .mark { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: #176c63; color: white; font-size: 25px; }
-    .eyebrow { font-size: .78rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; color: #287d72; }
-    h1 { font-size: clamp(1.85rem, 5vw, 2.5rem); line-height: 1.15; letter-spacing: -.04em; margin: 12px 0 17px; }
-    p { font-size: 1.06rem; line-height: 1.68; color: #516461; }
-    .contact { margin-top: 28px; padding-top: 23px; border-top: 1px solid #e5ede9; }
-    a { color: #096f62; text-underline-offset: 3px; overflow-wrap: anywhere; }
-    a:hover { color: #034b43; }
-    footer { margin-top: 35px; color: #71827e; font-size: .85rem; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; line-height: 1.67; }
+    a { color: #086c60; text-underline-offset: 3px; overflow-wrap: anywhere; }
+    a:hover { color: #044a42; }
+    a:focus-visible { outline: 3px solid #f2b84b; outline-offset: 3px; }
+    .top { background: #10685e; color: #fff; }
+    .top-inner { max-width: 950px; margin: auto; padding: 22px 24px; display: flex; align-items: center; gap: 13px; }
+    .mark { background: #fff; border-radius: 11px; height: 39px; width: 39px; display: grid; place-items: center; color: #10685e; font-size: 28px; font-weight: 650; line-height: 1; }
+    .brand { font-size: 1.04rem; letter-spacing: -.02em; font-weight: 760; }
+    main { max-width: 950px; margin: 0 auto; padding: 52px 24px 85px; }
+    .eyebrow { color: #28796d; font-size: .78rem; font-weight: 780; letter-spacing: .12em; text-transform: uppercase; }
+    h1 { margin: 12px 0 12px; font-size: clamp(2.15rem, 5vw, 3.25rem); line-height: 1.15; letter-spacing: -.05em; }
+    .lead { color: #526d67; font-size: 1.14rem; max-width: 740px; margin-bottom: 17px; }
+    .meta { font-size: .91rem; color: #617871; }
+    .summary { margin: 32px 0 37px; background: #e9f3ef; border: 1px solid #d4e8df; border-radius: 16px; padding: 22px 25px; }
+    .summary h2 { margin: 0 0 7px; font-size: 1.12rem; }
+    .summary p { margin: 0; color: #3a5c54; }
+    .layout { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 42px; align-items: start; }
+    nav { position: sticky; top: 30px; font-size: .90rem; }
+    nav strong { display: block; margin-bottom: 10px; color: #4e6a64; }
+    nav a { display: block; padding: 5px 0; color: #4d6964; text-decoration: none; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 0 0 18px; margin-bottom: 24px; border-bottom: 1px solid #dfe9e4; scroll-margin-top: 25px; }
+    section:last-child { border-bottom: 0; }
+    h2 { margin: 0 0 12px; font-size: 1.32rem; letter-spacing: -.025em; }
+    h3 { font-size: 1rem; margin: 19px 0 7px; }
+    p { margin: 0 0 13px; }
+    ul { padding-left: 21px; margin: 7px 0 16px; }
+    li { margin-bottom: 8px; }
+    .note { padding: 15px 18px; background: #fff; border-left: 4px solid #8abcb0; border-radius: 0 9px 9px 0; margin: 18px 0; }
+    .small { color: #5b726d; font-size: .91rem; }
+    footer { border-top: 1px solid #dce8e2; padding-top: 23px; font-size: .91rem; color: #59756f; }
+    @media (max-width: 730px) { main { padding-top: 35px; } .layout { display: block; } nav { position: static; margin-bottom: 28px; background: #fff; border: 1px solid #e2ece7; border-radius: 12px; padding: 16px 19px; } nav a { display: inline-block; margin-right: 13px; } .summary { padding: 20px; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   </style>
 </head>
 <body>
+  <header class="top"><div class="top-inner"><span class="mark" aria-hidden="true">⌂</span><span class="brand">Farmacia di Casa</span></div></header>
   <main>
-    <div class="brand"><div class="mark" aria-hidden="true">⌂</div><span>Farmacia di Casa</span></div>
-    <div class="eyebrow">Sito informativo</div>
-    <h1>I tuoi farmaci, sempre sotto controllo.</h1>
-    <p>Stiamo preparando questa pagina per mettere a disposizione l'informativa sulla privacy e le informazioni di supporto dell'app Farmacia di Casa.</p>
-    <p>Questa è una <strong>pagina provvisoria</strong> e non costituisce ancora l'informativa privacy dell'app.</p>
-    <div class="contact">
-      <strong>Contatti</strong>
-      <p>Per informazioni o assistenza, scrivi a <a href="mailto:farmaciadicasa@icloud.com">farmaciadicasa@icloud.com</a>.</p>
+    <p class="eyebrow">Informazioni e tutela dei dati</p>
+    <h1>Informativa sulla privacy</h1>
+    <p class="lead">Come funzionano la conservazione dei dati, le ricerche nei cataloghi e i permessi dell’app Farmacia di Casa per iOS.</p>
+    <p class="meta">Versione di riferimento: app 1.0, beta TestFlight · Ultimo aggiornamento: 19 novembre 2026</p>
+    <aside class="summary" aria-label="In breve">
+      <h2>In breve</h2>
+      <p>L’inventario e i nomi dei familiari sono conservati sul tuo dispositivo. L’app non richiede un account e non integra pubblicità o tracciamento pubblicitario nella versione qui descritta. Alcune ricerche di prodotti utilizzano cataloghi esterni e possono comportare l’invio del codice del prodotto e di dati tecnici della connessione.</p>
+    </aside>
+    <div class="layout">
+      <nav aria-label="Indice dell'informativa">
+        <strong>In questa pagina</strong>
+        <a href="#titolare">Titolare e contatti</a>
+        <a href="#dati-locali">Dati sul dispositivo</a>
+        <a href="#cataloghi">Cataloghi esterni</a>
+        <a href="#fotocamera">Fotocamera e notifiche</a>
+        <a href="#conservazione">Conservazione e backup</a>
+        <a href="#testflight">Beta e assistenza</a>
+        <a href="#basi">Finalità e basi giuridiche</a>
+        <a href="#diritti">Diritti e reclami</a>
+        <a href="#aggiornamenti">Aggiornamenti</a>
+      </nav>
+      <div>
+        <section id="titolare">
+          <h2>1. Titolare e contatti</h2>
+          <p>Il titolare di Farmacia di Casa è <strong>Michele Mazzini</strong>, sviluppatore indipendente dell’app.</p>
+          <p>Per richieste sulla privacy o assistenza puoi scrivere a <a href="mailto:farmaciadicasa@icloud.com">farmaciadicasa@icloud.com</a>.</p>
+        </section>
+        <section id="dati-locali">
+          <h2>2. Quali dati rimangono sul dispositivo</h2>
+          <p>Le schede dei prodotti e i profili dei familiari sono conservati sul dispositivo mediante SwiftData. L’app si usa senza account.</p>
+          <p>Puoi registrare nomi di medicinali e altri prodotti, categorie, date di scadenza, quantità, codici delle confezioni (AIC, GTIN e codici letti), marca, descrizione e associazioni facoltative ai componenti della famiglia. I codici completi di alcune confezioni possono includere anche lotto o numero seriale.</p>
+          <p>Il nome di un familiare associato a un medicinale può rivelare informazioni relative alla sua salute: presta attenzione ai dati che inserisci e alle notifiche mostrate sullo schermo.</p>
+          <p>La scelta di attivare i promemoria viene salvata nelle preferenze locali. Non è prevista una cronologia remota delle ricerche effettuate nell’inventario.</p>
+        </section>
+        <section id="cataloghi">
+          <h2>3. Consultazione di cataloghi esterni</h2>
+          <h3>AIFA</h3>
+          <p>Farmacia di Casa può scaricare il catalogo pubblico completo dell’Agenzia Italiana del Farmaco (AIFA). La ricerca del singolo codice AIC avviene successivamente sul dispositivo: non viene inviata ad AIFA la lista dei medicinali presenti nel tuo inventario.</p>
+          <h3>Open Food Facts e Open Beauty Facts</h3>
+          <p>Quando serve identificare un prodotto dal GTIN dopo la conferma di una scansione, l’app può inviare quel codice a Open Food Facts e, se indicato dal servizio, anche a Open Beauty Facts. <strong>La richiesta può iniziare all’apertura della scheda, anche se successivamente decidi di non salvarla.</strong></p>
+          <p>Le richieste possono rendere visibili ai fornitori l’indirizzo IP della connessione, il codice GTIN richiesto, l’orario e informazioni tecniche della richiesta. Non contengono nomi dei familiari, quantità, scadenze registrate, fotografie, lotti, seriali o l’intero contenuto dell’inventario.</p>
+          <p>I fornitori possono conservare log tecnici secondo le rispettive politiche. Le informative di Open Facts indicano un periodo di tre anni per i log delle visite ai siti; <strong>non è stato ancora confermato se tale termine si applichi anche alle chiamate API</strong> utilizzate da Farmacia di Casa.</p>
+          <p class="small">Informative dei fornitori: <a href="https://www.aifa.gov.it/privacy" rel="noopener noreferrer">AIFA</a> · <a href="https://world.openfoodfacts.org/privacy" rel="noopener noreferrer">Open Food Facts</a> · <a href="https://world.openbeautyfacts.org/privacy" rel="noopener noreferrer">Open Beauty Facts</a>.</p>
+          <p>La consultazione dei cataloghi è una funzione di identificazione dei prodotti; è possibile compilare manualmente le schede senza utilizzare una ricerca GTIN esterna.</p>
+        </section>
+        <section id="fotocamera">
+          <h2>4. Fotocamera, riconoscimento e notifiche</h2>
+          <p>Con il tuo permesso, l’app usa la fotocamera per leggere codici a barre e date di scadenza. Il riconoscimento del testo avviene sul dispositivo e la data proposta deve essere confermata: l’app non conserva le fotografie scattate per questa funzione.</p>
+          <p>Puoi attivare notifiche locali per ricordare le scadenze. Il contenuto di un promemoria può includere il nome del prodotto ed essere visibile nella schermata di blocco, secondo le impostazioni di iOS. Puoi gestire le autorizzazioni nelle impostazioni del dispositivo.</p>
+        </section>
+        <section id="conservazione">
+          <h2>5. Conservazione, cancellazione e backup</h2>
+          <p>Le schede rimangono nell’inventario finché non le elimini. Archiviare un prodotto non lo cancella. Eliminare una scheda o un profilo rimuove la relativa voce dall’archivio corrente, ma non elimina necessariamente copie già incluse in backup precedenti.</p>
+          <p>L’app conserva localmente anche dati dei cataloghi e cache temporanee per velocizzare le ricerche o consentire consultazioni offline. Alcuni di questi file possono permanere sul dispositivo oltre il periodo in cui il risultato è considerato aggiornato.</p>
+          <div class="note"><strong>Backup del dispositivo.</strong> Se il backup dell’iPhone è attivo, può contenere una copia dell’inventario. Il backup di sistema è diverso dalla sincronizzazione tramite CloudKit e segue le impostazioni e le regole di conservazione di Apple. Le copie esistenti nei backup non sono necessariamente eliminate quando cancelli un prodotto dall’app.</div>
+          <p class="small">Per maggiori informazioni: <a href="https://support.apple.com/it-it/108770" rel="noopener noreferrer">Cosa include il backup iCloud</a>.</p>
+        </section>
+        <section id="testflight">
+          <h2>6. Versioni beta, feedback e assistenza</h2>
+          <p>Se utilizzi la beta tramite TestFlight, <strong>Apple raccoglie automaticamente dati d’uso e log degli arresti anomali</strong> e li condivide con lo sviluppatore secondo le proprie condizioni. Puoi inoltre inviare volontariamente commenti e screenshot; questi possono mostrare dati presenti nel tuo inventario.</p>
+          <p>Ti consigliamo di usare dati fittizi durante i test e di non includere informazioni sanitarie personali negli screenshot o nelle email di feedback. Le comunicazioni ricevute tramite l’indirizzo di assistenza sono utilizzate per rispondere e gestire le segnalazioni e sono conservate per il tempo necessario a tale scopo, salvi eventuali obblighi applicabili.</p>
+          <p class="small">Informazioni: <a href="https://www.apple.com/legal/privacy/data/it/test-flight/" rel="noopener noreferrer">Apple · TestFlight e privacy</a>.</p>
+        </section>
+        <section id="basi">
+          <h2>7. Finalità, basi giuridiche e destinatari</h2>
+          <p>Le funzionalità dell’app elaborano sul dispositivo i dati che decidi di inserire, per permetterti di gestire l’inventario e i promemoria richiesti. Nella versione qui descritta non è presente un server di Farmacia di Casa che riceve il tuo inventario o i nomi dei familiari.</p>
+          <p>Le ricerche online, quando utilizzate, servono a identificare i prodotti. I relativi fornitori gestiscono le informazioni tecniche ricevute secondo le proprie informative; le modalità applicabili alle chiamate API sono oggetto di ulteriore verifica.</p>
+          <p>Le richieste di assistenza inviate volontariamente vengono gestite per rispondere all’utente e mantenere il servizio funzionante, sulla base dell’interesse legittimo a gestire le comunicazioni e risolvere problemi, nei limiti della normativa applicabile.</p>
+          <p>La versione beta non utilizza i dati dell’inventario per profilazione o pubblicità. L’eventuale introduzione futura di servizi pubblicitari richiederà una nuova valutazione privacy e un aggiornamento di questa informativa.</p>
+          <p>Le richieste ai cataloghi possono coinvolgere infrastrutture di terzi; per ubicazione dei log, destinatari ulteriori ed eventuali trasferimenti internazionali si rinvia anche alle informative dei rispettivi fornitori, in attesa dei chiarimenti richiesti.</p>
+        </section>
+        <section id="diritti">
+          <h2>8. Diritti e reclami</h2>
+          <p>Nei casi previsti dalla normativa applicabile puoi chiedere accesso, rettifica, cancellazione, limitazione del trattamento o portabilità dei tuoi dati, oppure opporti al trattamento. Quando un trattamento si basa sul consenso puoi revocarlo in qualsiasi momento.</p>
+          <p>Per le informazioni presenti nell’inventario puoi utilizzare anche le funzioni di modifica ed eliminazione dell’app. Per richieste rivolte allo sviluppatore scrivi a <a href="mailto:farmaciadicasa@icloud.com">farmaciadicasa@icloud.com</a>.</p>
+          <p>Puoi inoltre presentare reclamo al <a href="https://www.garanteprivacy.it/diritti/come-agire-per-tutelare-i-tuoi-dati-personali/reclamo" rel="noopener noreferrer">Garante per la protezione dei dati personali</a> o all’autorità di controllo competente.</p>
+        </section>
+        <section id="aggiornamenti">
+          <h2>9. Sito web e aggiornamenti</h2>
+          <p>Questa pagina statica è ospitata su GitHub Pages e non incorpora strumenti di analisi o pubblicità. GitHub, in qualità di fornitore dell’hosting, può trattare dati tecnici relativi alle visite secondo la propria <a href="https://docs.github.com/it/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">informativa privacy</a>.</p>
+          <p>Questa informativa descrive la versione beta identificata in apertura. Sarà aggiornata se cambieranno le funzionalità, i fornitori o i trattamenti effettuati, anche alla luce dei chiarimenti ancora richiesti sui log dei cataloghi e sui backup.</p>
+        </section>
+      </div>
     </div>
-    <footer>Farmacia di Casa · Pagina in preparazione</footer>
+    <footer>Farmacia di Casa · I tuoi farmaci, sempre sotto controllo · <a href="mailto:farmaciadicasa@icloud.com">farmaciadicasa@icloud.com</a></footer>
   </main>
 </body>
 </html>
